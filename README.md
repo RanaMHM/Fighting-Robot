@@ -1,6 +1,5 @@
 # Fighting Robot
-### Fighting robot is the first project in summer training with [Smart Methods Foundation](https://github.com/smart-methods)
-
+### Fighting robot is the first project in summer training with [Smart Methods Foundation]
 **Fighting robot is divided into two parts:**
 >  1. The arm of the robot. → [Robot_Arm](https://github.com/RanaMHM/Robot_Arm) repository<br>
 >    The HTML interface has been done to define the values of the arm motors and link them to the database through PHP . <br>
