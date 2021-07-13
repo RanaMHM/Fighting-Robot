@@ -10,4 +10,4 @@
 <br> &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; ![fighting](https://user-images.githubusercontent.com/52053143/125397696-f3df9000-e3b6-11eb-875d-aa816abbdd7f.jpg)
 
 ***
-# In the Fighting_Robot repository, we have merged the control panels of the arm and the base in one HTML interface
+#  Fighting_Robot repository 
