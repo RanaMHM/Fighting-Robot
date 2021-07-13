@@ -10,7 +10,7 @@
 <br> &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; ![fighting](https://user-images.githubusercontent.com/52053143/125397696-f3df9000-e3b6-11eb-875d-aa816abbdd7f.jpg)
 
 ***
-#  Fighting_Robot control panels
+#  Fighting_Robot: the control panels
 *  The control panel of the arm and the control panel of the base have been merged into one main page by pressing the button named after each of them, then the panel will appear in the designated place. 
 
 * Also, [Chatbot](https://github.com/RanaMHM/Fighting_Robot#chatbot) has been added to the page.
