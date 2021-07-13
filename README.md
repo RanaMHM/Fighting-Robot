@@ -13,7 +13,7 @@
 #  Fighting_Robot control panels
 *  The control panel of the arm and the control panel of the base have been merged into one main page by pressing the button named after each of them, then the panel will appear in the designated place. 
 
-* Also, [Chatbot]((ChatBot)) has been added to the page.
+* Also, [Chatbot](https://github.com/RanaMHM/Fighting_Robot#chatbot) has been added to the page.
 * The 'Start again' button appears with the robot arm control panel and  the robot base control panel, When you click on it, it will go back to the beginning and delete all the data saved in the databases.
 <br>**The databases have been linked to the "Start again" button through the [deletDDB.php](https://github.com/RanaMHM/Fighting_Robot/blob/main/CodeFiles/deletDDB.php)  databases file, with the addition of an order to delete data when clicking on the button.**<br>
 
