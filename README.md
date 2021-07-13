@@ -5,15 +5,15 @@
 >    The HTML interface has been done to define the values of the arm motors and link them to the database through PHP . <br>
 
 >  2. The base of the robot. →  [Robot_Base](https://github.com/RanaMHM/Robot_Base) repository.<br>
->     The HTML interface has been made to point the robot base in four directions and show the value saved in the database in a separate PHP page .  
+>     The HTML interface displays four buttons that direct the robot base in four directions and the PHP links the data with the database and displays it on a separate PHP page.  
 
 <br> &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; ![fighting](https://user-images.githubusercontent.com/52053143/125397696-f3df9000-e3b6-11eb-875d-aa816abbdd7f.jpg)
 
 ***
-#  Fighting_Robot interface 
+#  Fighting_Robot control panels
 *  The control panel of the arm and the control panel of the base have been merged into one main page by pressing the button named after each of them, then the panel will appear in the designated place. 
 
-* Also, Chatbot has been added to the page.
+* Also, [Chatbot]((ChatBot)) has been added to the page.
 * The 'Start again' button appears with the robot arm control panel and  the robot base control panel, When you click on it, it will go back to the beginning and delete all the data saved in the databases.
 <br>**The databases have been linked to the "Start again" button through the [deletDDB.php](https://github.com/RanaMHM/Fighting_Robot/blob/main/CodeFiles/deletDDB.php)  databases file, with the addition of an order to delete data when clicking on the button.**<br>
 
