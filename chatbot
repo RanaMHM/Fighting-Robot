@@ -1,0 +1,726 @@
+{
+  "intents": [
+    {
+      "intent": "bye",
+      "examples": [
+        {
+          "text": "bye"
+        },
+        {
+          "text": "bye bye"
+        },
+        {
+          "text": "good bye"
+        },
+        {
+          "text": "see you later"
+        }
+      ],
+      "description": ""
+    },
+    {
+      "intent": "end",
+      "examples": [
+        {
+          "text": "thank u"
+        },
+        {
+          "text": "thank you"
+        },
+        {
+          "text": "welcome"
+        }
+      ],
+      "description": ""
+    },
+    {
+      "intent": "GB",
+      "examples": [
+        {
+          "text": "bad"
+        },
+        {
+          "text": "good"
+        },
+        {
+          "text": "It needs some modification"
+        }
+      ],
+      "description": ""
+    },
+    {
+      "intent": "good",
+      "examples": [
+        {
+          "text": "Alhamdulillah okay"
+        },
+        {
+          "text": "all right"
+        },
+        {
+          "text": "fine"
+        },
+        {
+          "text": "good"
+        },
+        {
+          "text": "i am fine"
+        },
+        {
+          "text": "okay"
+        }
+      ],
+      "description": ""
+    },
+    {
+      "intent": "HowAreYou",
+      "examples": [
+        {
+          "text": "hoe are you?"
+        },
+        {
+          "text": "how are u?"
+        },
+        {
+          "text": "how are you?"
+        },
+        {
+          "text": "How are you doing?"
+        },
+        {
+          "text": "How are you getting on?"
+        },
+        {
+          "text": "How do you do?"
+        }
+      ],
+      "description": ""
+    },
+    {
+      "intent": "No",
+      "examples": [
+        {
+          "text": "no"
+        }
+      ],
+      "description": ""
+    },
+    {
+      "intent": "RoboAction",
+      "examples": [
+        {
+          "text": "help me"
+        },
+        {
+          "text": "how can you help me?"
+        },
+        {
+          "text": "What are you doing?"
+        },
+        {
+          "text": "What is your benefit?"
+        },
+        {
+          "text": "Why are you here?"
+        },
+        {
+          "text": "your work?"
+        },
+        {
+          "text": "كيف يمكنك مساعدتي؟"
+        },
+        {
+          "text": "ماذا تفعل؟"
+        }
+      ],
+      "description": ""
+    },
+    {
+      "intent": "RoboName",
+      "examples": [
+        {
+          "text": "my name is"
+        },
+        {
+          "text": "what is your name?"
+        },
+        {
+          "text": "what's your name?"
+        },
+        {
+          "text": "who?"
+        },
+        {
+          "text": "who are you?"
+        },
+        {
+          "text": "Your Name?"
+        }
+      ],
+      "description": ""
+    },
+    {
+      "intent": "Welcome",
+      "examples": [
+        {
+          "text": "goodafternoon"
+        },
+        {
+          "text": "goodmorning"
+        },
+        {
+          "text": "hello"
+        },
+        {
+          "text": "helloo"
+        },
+        {
+          "text": "Hi"
+        },
+        {
+          "text": "السلام عليكم"
+        },
+        {
+          "text": "اهلين"
+        },
+        {
+          "text": "هلا"
+        },
+        {
+          "text": "هيلو"
+        }
+      ],
+      "description": ""
+    },
+    {
+      "intent": "Yes",
+      "examples": [
+        {
+          "text": "yes"
+        }
+      ],
+      "description": ""
+    },
+    {
+      "intent": "yesNo",
+      "examples": [
+        {
+          "text": "n"
+        },
+        {
+          "text": "y"
+        }
+      ],
+      "description": ""
+    }
+  ],
+  "entities": [
+    {
+      "entity": "sys-number",
+      "values": [],
+      "fuzzy_match": true
+    }
+  ],
+  "metadata": {
+    "api_version": {
+      "major_version": "v2",
+      "minor_version": "2018-11-08"
+    },
+    "from-sample": true
+  },
+  "dialog_nodes": [
+    {
+      "type": "event_handler",
+      "output": {},
+      "parent": "slot_9_1626076349657",
+      "context": {
+        "number": "@sys-number"
+      },
+      "conditions": "@sys-number",
+      "event_name": "input",
+      "dialog_node": "handler_2_1626076349671"
+    },
+    {
+      "type": "event_handler",
+      "output": {
+        "generic": [
+          {
+            "values": [
+              {
+                "text": "How can you rate this page out of ten?"
+              }
+            ],
+            "response_type": "text",
+            "selection_policy": "sequential"
+          }
+        ]
+      },
+      "parent": "slot_9_1626076349657",
+      "event_name": "focus",
+      "dialog_node": "handler_9_1626076349671",
+      "previous_sibling": "handler_2_1626076349671"
+    },
+    {
+      "type": "standard",
+      "output": {
+        "generic": [
+          {
+            "values": [
+              {
+                "text": "Good"
+              }
+            ],
+            "response_type": "text",
+            "selection_policy": "sequential"
+          }
+        ]
+      },
+      "parent": "node_4_1626073512577",
+      "conditions": "#good",
+      "dialog_node": "node_10_1626073643710"
+    },
+    {
+      "type": "standard",
+      "output": {
+        "generic": [
+          {
+            "title": "The background",
+            "options": [
+              {
+                "label": "Good",
+                "value": {
+                  "input": {
+                    "text": "good"
+                  }
+                }
+              },
+              {
+                "label": "It needs some modification",
+                "value": {
+                  "input": {
+                    "text": "It needs some modification"
+                  }
+                }
+              },
+              {
+                "label": "Bad",
+                "value": {
+                  "input": {
+                    "text": "bad"
+                  }
+                }
+              }
+            ],
+            "response_type": "option"
+          }
+        ]
+      },
+      "parent": "node_6_1626074413583",
+      "conditions": "#GB",
+      "dialog_node": "node_10_1626075237058"
+    },
+    {
+      "type": "standard",
+      "output": {
+        "generic": [
+          {
+            "values": [
+              {
+                "text": "see you later"
+              },
+              {
+                "text": "Good bye"
+              },
+              {
+                "text": "bye"
+              }
+            ],
+            "response_type": "text",
+            "selection_policy": "random"
+          }
+        ]
+      },
+      "conditions": "#bye",
+      "dialog_node": "node_10_1626078416459"
+    },
+    {
+      "type": "standard",
+      "output": {
+        "generic": [
+          {
+            "title": "Do the buttons work correctly?",
+            "options": [
+              {
+                "label": "Yes",
+                "value": {
+                  "input": {
+                    "text": "y"
+                  }
+                }
+              },
+              {
+                "label": "No",
+                "value": {
+                  "input": {
+                    "text": "n"
+                  }
+                }
+              }
+            ],
+            "response_type": "option"
+          }
+        ]
+      },
+      "parent": "node_2_1626075599357",
+      "conditions": "#yesNo",
+      "dialog_node": "node_1_1626075784184"
+    },
+    {
+      "type": "standard",
+      "output": {
+        "generic": [
+          {
+            "title": "Is the page working properly?",
+            "options": [
+              {
+                "label": "Yes",
+                "value": {
+                  "input": {
+                    "text": "y"
+                  }
+                }
+              },
+              {
+                "label": "No",
+                "value": {
+                  "input": {
+                    "text": "n"
+                  }
+                }
+              }
+            ],
+            "response_type": "option"
+          }
+        ]
+      },
+      "parent": "node_4_1626075517334",
+      "conditions": "#GB",
+      "dialog_node": "node_2_1626075599357"
+    },
+    {
+      "type": "frame",
+      "output": {
+        "generic": [
+          {
+            "values": [
+              {
+                "text": "Thank you for helping us improve our page."
+              }
+            ],
+            "response_type": "text",
+            "selection_policy": "sequential"
+          }
+        ]
+      },
+      "parent": "node_1_1626075784184",
+      "next_step": {
+        "behavior": "jump_to",
+        "selector": "user_input",
+        "dialog_node": "node_5_1626076886541"
+      },
+      "conditions": "#yesNo",
+      "dialog_node": "node_2_1626075863303"
+    },
+    {
+      "type": "standard",
+      "output": {
+        "generic": [
+          {
+            "values": [
+              {
+                "text": "I am fine, and you?"
+              },
+              {
+                "text": "I'm fine, what about you?"
+              }
+            ],
+            "response_type": "text",
+            "selection_policy": "sequential"
+          }
+        ]
+      },
+      "parent": "node_9_1626072378820",
+      "conditions": "#HowAreYou",
+      "dialog_node": "node_4_1626073512577"
+    },
+    {
+      "type": "standard",
+      "output": {
+        "generic": [
+          {
+            "title": "I'm here to take your feedback on this page. Would you do that?",
+            "options": [
+              {
+                "label": "Yes",
+                "value": {
+                  "input": {
+                    "text": "yes"
+                  }
+                }
+              },
+              {
+                "label": "No",
+                "value": {
+                  "input": {
+                    "text": "no"
+                  }
+                }
+              }
+            ],
+            "response_type": "option"
+          }
+        ]
+      },
+      "conditions": "#RoboAction",
+      "dialog_node": "node_4_1626074094725",
+      "previous_sibling": "node_5_1626076886541"
+    },
+    {
+      "type": "standard",
+      "output": {
+        "generic": [
+          {
+            "title": "The design",
+            "options": [
+              {
+                "label": "Good",
+                "value": {
+                  "input": {
+                    "text": "good"
+                  }
+                }
+              },
+              {
+                "label": "Bad",
+                "value": {
+                  "input": {
+                    "text": "bad"
+                  }
+                }
+              },
+              {
+                "label": "It needs some modification",
+                "value": {
+                  "input": {
+                    "text": "It needs some modification"
+                  }
+                }
+              }
+            ],
+            "response_type": "option"
+          }
+        ]
+      },
+      "parent": "node_10_1626075237058",
+      "conditions": "#GB",
+      "dialog_node": "node_4_1626075517334"
+    },
+    {
+      "type": "standard",
+      "title": "thankyou",
+      "output": {
+        "generic": [
+          {
+            "values": [
+              {
+                "text": "see you again"
+              },
+              {
+                "text": "see you later"
+              }
+            ],
+            "response_type": "text",
+            "selection_policy": "random"
+          }
+        ]
+      },
+      "conditions": "#end",
+      "dialog_node": "node_5_1626076886541",
+      "previous_sibling": "node_10_1626078416459"
+    },
+    {
+      "type": "standard",
+      "output": {
+        "generic": [
+          {
+            "title": "Well , How would you rate this page in terms of formatting?",
+            "options": [
+              {
+                "label": "Good",
+                "value": {
+                  "input": {
+                    "text": "good"
+                  }
+                }
+              },
+              {
+                "label": "It needs some modification",
+                "value": {
+                  "input": {
+                    "text": "It needs some modification"
+                  }
+                }
+              },
+              {
+                "label": "Bad",
+                "value": {
+                  "input": {
+                    "text": "bad"
+                  }
+                }
+              }
+            ],
+            "response_type": "option"
+          }
+        ]
+      },
+      "parent": "node_4_1626074094725",
+      "conditions": "#Yes",
+      "dialog_node": "node_6_1626074413583"
+    },
+    {
+      "type": "standard",
+      "output": {
+        "generic": [
+          {
+            "values": [
+              {
+                "text": "Well, you can do that anytime you want"
+              },
+              {
+                "text": "Thank you."
+              }
+            ],
+            "response_type": "text",
+            "selection_policy": "multiline"
+          }
+        ]
+      },
+      "parent": "node_4_1626074094725",
+      "next_step": {
+        "behavior": "jump_to",
+        "selector": "user_input",
+        "dialog_node": "node_5_1626076886541"
+      },
+      "conditions": "#No",
+      "dialog_node": "node_8_1626074969468",
+      "previous_sibling": "node_6_1626074413583"
+    },
+    {
+      "type": "standard",
+      "output": {
+        "generic": [
+          {
+            "values": [
+              {
+                "text": "i am fine"
+              },
+              {
+                "text": "i am good "
+              },
+              {
+                "text": "I am fine.Thank you"
+              }
+            ],
+            "response_type": "text",
+            "selection_policy": "random"
+          }
+        ]
+      },
+      "conditions": "#HowAreYou",
+      "dialog_node": "node_9_1626072378820",
+      "previous_sibling": "node_9_1626073739143"
+    },
+    {
+      "type": "standard",
+      "output": {
+        "generic": [
+          {
+            "values": [
+              {
+                "text": "I am Robo "
+              },
+              {
+                "text": "I'm a Robo , chatbot assistant"
+              }
+            ],
+            "response_type": "text",
+            "selection_policy": "random"
+          }
+        ]
+      },
+      "conditions": "#RoboName",
+      "dialog_node": "node_9_1626073739143",
+      "previous_sibling": "Welcome"
+    },
+    {
+      "type": "slot",
+      "parent": "node_2_1626075863303",
+      "variable": "$number",
+      "dialog_node": "slot_9_1626076349657"
+    },
+    {
+      "type": "standard",
+      "title": "Welcome",
+      "output": {
+        "generic": [
+          {
+            "values": [
+              {
+                "text": "Hello"
+              },
+              {
+                "text": "Hi"
+              }
+            ],
+            "response_type": "text",
+            "selection_policy": "random"
+          }
+        ]
+      },
+      "next_step": {
+        "behavior": "jump_to",
+        "selector": "body",
+        "dialog_node": "node_4_1626074094725"
+      },
+      "conditions": "#Welcome",
+      "dialog_node": "Welcome",
+      "previous_sibling": "node_4_1626074094725"
+    }
+  ],
+  "counterexamples": [],
+  "system_settings": {
+    "off_topic": {
+      "enabled": true
+    },
+    "disambiguation": {
+      "prompt": "Did you mean:",
+      "enabled": true,
+      "randomize": true,
+      "max_suggestions": 5,
+      "suggestion_text_policy": "title",
+      "none_of_the_above_prompt": "None of the above"
+    },
+    "human_agent_assist": {
+      "prompt": "Did you mean:"
+    },
+    "intent_classification": {
+      "training_backend_version": "v2"
+    },
+    "spelling_auto_correct": true
+  },
+  "learning_opt_out": false,
+  "name": "speaking",
+  "language": "en",
+  "description": ""
+}
