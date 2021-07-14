@@ -47,7 +47,7 @@ https://user-images.githubusercontent.com/52053143/125515959-9cc59c0c-b2cb-4f18-
 
 # ChatBot
 
-### The chatbot was created by [IBM Waston](https://www.ibm.com/cloud/watson-assistant)
+### The chatbot was created by [IBM Watson](https://www.ibm.com/cloud/watson-assistant)
  
  * [chatbot.json](https://github.com/RanaMHM/Fighting_Robot/blob/main/chatbot.json)
 
